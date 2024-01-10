@@ -27,7 +27,8 @@ class CoordinatesSorter:
         self.gmaps = googlemaps.Client(key=self.gmaps_api_key)
         self.coordinates_start_point = coordinates_start_point
 
-    def dms_to_decimal(self, dms_str):
+    @staticmethod
+    def dms_to_decimal(dms_str):
         """Convert coordinates in DMS (Degrees Minutes Seconds) format to decimal format."""
         dms_pattern = re.compile(r'(\d+)°(\d+)‘(\d+)“([NSEW])')
         match = dms_pattern.match(dms_str)
