@@ -182,8 +182,8 @@ class CoordinatesSorter:
 
         folium.LayerControl().add_to(my_map)
 
-        my_map.save('map_from_file_new_ver.html')
-        print("Map saved to map_from_file.html")
+        my_map.save('final_map_output.html')
+        print("Map saved to final_map_output.html")
 
     def get_marker_popup(self, number, description, coordinates):
         if not description:
